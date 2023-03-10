@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #e5bbb3;
+    width: 100%;
+}
+
+.logo-wrapper a {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    max-width: 240px;
+    height: 40px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    color: #80182d;
+    cursor: pointer;
+}
+
+.logo-name {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-wrapper {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    padding: 20px;
+}
+.euro, .usd, .zlot, .yen {
+    display: flex;
+}
+
+.curr {
+    margin-right: 20px;
+    align-items: center;
+}
+
+.currency-span {
+    display: flex;
+    margin-right: 5px;
+}
+
+.curr-img {
+    width: 30px;
+    height: 30px;
+}
+
+.main {
+    background-color: #CE84AD;
+    color: #fff;
+    padding: 50px 0 100px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main-span {
+    margin: 20px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.form-block {
+    background-color: #D2E0BF;
+    padding: 20px;
+    color: #000;
+}
+
+.form-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.take-input-wrapp, .give-input-wrapp {
+    width: 50%;
+    padding: 20px;
+}
+
+.info-label {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.give-input, .take-input {
+    width: 70%;
+    padding: 15px;
+    background-color: inherit;
+    border-bottom: 2px solid #000;
+}
+
+.curr-select {
+    padding: 15px;
+    background-color: inherit;
+    border: 2px solid #000;
+    margin-left: 10px;
+}
+
+option {
+    background-color: #D2E0BF;
+    border: 2px solid #000;
+    padding: 5px;
+    box-shadow: none;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #e5bbb3;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-list {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.link:not(:last-child) {
+    margin-right: 20px;
+    display: block;
+}
+
+a.link-item {
+    color: #000;
+    transition: 0.5s ease;
+}
+
+a.link-item:hover {
+    color: #bc4d74;
+    transition: 0.5s ease;
+}
+
+.map {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 991.98px) { 
+    .link-list {
+        display: block;
+    }
+
+    .link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .curr-select {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .logo-wrapper {
+        height: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .map {
+        width: 200px;
+        height: 200px;
+    }
+
+    .currency-wrapper {
+        max-width: 400px;
+        padding: 5px;
+    }
+
+    .logo-name {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+
+    .logo-wrapper {
+        max-width: 180px;
+        height: 50px;
+    }
+    .main {
+        padding: 25px 0 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .currency-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .curr {
+        margin: 0;
+        width: 130px;
+    }
+    .curr:nth-child(2n) {
+        margin-left: 20px;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .logo-wrapper {
+        margin: 10px auto;
+    }
+
+    .navigatotion {
+        margin: 0 auto 10px;
+        text-align: center;
+        width: 180px;
+    }
+
+    .link {
+        margin: 0 0 10px 0 !important;
+    }
+
+    .ourmap {
+        margin: 0 auto;
+    }
+}
